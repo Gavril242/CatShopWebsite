@@ -1,0 +1,56 @@
+<div class="container text-center">
+    <h1 class="display-5">Orders</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date Created</th>
+                        <th>Total Price</th>
+                        <th>Action</th> <!-- Added a new header for the action button(s) -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orders">
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.dateCreated }}</td>
+                        <td>${{ order.total }}</td>
+                        <td>
+                            <button class="btn btn-danger" (click)="deleteOrder(order.id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex flex-col items-center justify-center h-full">
+    <p class="mb-6 text-2xl text-left font-semibold text-gray-800">Add products to the store:</p>
+    <button 
+        (click)="redirectToAdd()" 
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+      Add
+    </button>
+</div>
+
+
+<div class="container text-center">
+    <h1 class="display-5">Products</h1>
+    <div class="row">
+       <div class="col-md-3 mb-4" *ngFor="let product of products">
+          <div class="card p-2" style="cursor: pointer;">
+             <img [src]="product.imgUrl" class="card-img" alt="{{ product.name }}">
+             <div class="card-body">
+                <h6 class="card-title">{{ product.name }}</h6>
+                <p class="card-text">${{ product.price }}</p>
+                <!-- Delete Button -->
+                <button (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</button>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ 

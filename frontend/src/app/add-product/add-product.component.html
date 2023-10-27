@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Add New Product</h2>
+        <form (submit)="addProduct()">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td class="align-middle">Product Name:</td>
+                <td><input type="text" [(ngModel)]="productName" name="productName" class="form-control"></td>
+              </tr>
+              <tr>
+                <td class="align-middle">Description:</td>
+                <td><textarea [(ngModel)]="productDescription" name="description" class="form-control"></textarea></td>
+              </tr>
+              <tr>
+                <td class="align-middle">Image URL:</td>
+                <td><input type="text" [(ngModel)]="productImgUrl" name="imgUrl" class="form-control"></td>
+              </tr>
+              <tr>
+                <td class="align-middle">Price:</td>
+                <td><input type="number" [(ngModel)]="productPrice" name="price" class="form-control"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Add Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

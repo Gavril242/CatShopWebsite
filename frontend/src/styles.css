@@ -1,0 +1,10 @@
+
+body {
+  
+    background: linear-gradient(to right, #3B82F6, #EC4899); /* Gradient from blue to pink */
+    min-height: 100vh;
+    margin: 0;
+
+
+  padding-top: 70px !important;
+}
