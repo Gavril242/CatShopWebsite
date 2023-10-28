@@ -39,4 +39,9 @@ mvn clean install
 3. Run the app via `npm start` and for back end make sure xamp is initialized and run the BackendApplication.java.
 
 # ENJOY!
+some screenshots 
+![image](https://github.com/Gavril242/CatShopWebsite/assets/100515565/df95fe3f-0f60-4ca2-b8c2-79586da54716)
 
+![image](https://github.com/Gavril242/CatShopWebsite/assets/100515565/79f23a0c-259b-449e-b85c-112558c11806)
+
+![image](https://github.com/Gavril242/CatShopWebsite/assets/100515565/9b10a462-4424-4108-acd3-5c2147e17f28)
