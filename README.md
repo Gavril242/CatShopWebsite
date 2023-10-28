@@ -4,7 +4,7 @@ This is a full stack webisite and is a project for the WAD course.
 - Java 17
 - Maven
 - Angular
-- MS SQL Server Database
+- XAMP - For database
 
 **1. Clone the repository:**
 ```shell
